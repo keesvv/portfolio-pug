@@ -1,9 +1,11 @@
 :root {
 	--bg-color: #fff;
 	--fg-color: #000;
+	--secondary: rgb(225, 225, 225);
 }
 
 body.dark {
 	--bg-color: #000;
 	--fg-color: #fff;
+	--secondary: rgb(75, 75, 75);
 }
