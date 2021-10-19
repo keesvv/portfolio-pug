@@ -1,0 +1,10 @@
+{
+	"include": ["scripts"],
+	"compilerOptions": {
+		"target": "ES2018",
+		"outDir": "dist/js",
+		"allowJs": false,
+		"sourceMap": true,
+		"noImplicitAny": true
+	}
+}

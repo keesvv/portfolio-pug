@@ -1,5 +1,5 @@
 # keesvv-portfolio
-My new portfolio, written in Pug, Go & SCSS.
+My new portfolio, written in Pug, Go, TypeScript & SCSS.
 
 ## Building
 ```

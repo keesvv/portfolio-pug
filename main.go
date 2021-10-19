@@ -8,10 +8,15 @@ import (
 	"github.com/keesvv/portfolio/views"
 )
 
+func serveStatic(path string, publicPath string) {
+	fs := http.FileServer(http.Dir(path))
+	http.Handle(publicPath+"/", http.StripPrefix(publicPath, fs))
+}
+
 func main() {
 	// Static content
-	fs := http.FileServer(http.Dir("./css"))
-	http.Handle("/static/css/", http.StripPrefix("/static/css", fs))
+	serveStatic("./css", "/static/css")
+	serveStatic("./js", "/static/js")
 
 	http.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
 		views.Index(rw)

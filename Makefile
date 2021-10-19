@@ -1,6 +1,6 @@
 OUTDIR=dist
 
-all: dirs scss server
+all: dirs scss scripts server
 
 dirs:
 	mkdir -p $(OUTDIR)
@@ -15,6 +15,9 @@ scss:
 
 scss-watch:
 	sass -w scss:$(OUTDIR)/css
+
+scripts:
+	tsc
 
 clean:
 	rm -r dist
