@@ -1,6 +1,10 @@
+@import "./variables.scss";
 @import "../views/includes/navbar.scss";
+@import "../views/includes/header.scss";
 
 body {
+	background: var(--bg-color);
+	color: var(--fg-color);
 	box-sizing: border-box;
 	font-family: sans-serif;
 	margin: 40px;

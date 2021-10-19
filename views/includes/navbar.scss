@@ -1,6 +1,15 @@
 .navbar {
+	margin: 20px 0;
+
 	ul {
 		list-style-type: none;
 		padding: 0;
+		margin: 0;
+	}
+
+	a {
+		border-bottom: 2px dotted;
+		text-decoration: none;
+		color: inherit;
 	}
 }

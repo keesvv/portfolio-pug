@@ -3,8 +3,7 @@ My new portfolio, written in Pug, Go & SCSS.
 
 ## Building
 ```
-go generate
-go build
+make -B
 ```
 
 ## Author
