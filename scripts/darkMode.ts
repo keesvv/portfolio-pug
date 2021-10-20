@@ -40,7 +40,7 @@ function appendToggle(): void {
 	btnToggle.addEventListener("click", () => darkMode.toggle());
 
 	item.appendChild(btnToggle);
-	document.querySelector(".navbar .right").appendChild(item);
+	document.querySelector(".navbar ul").appendChild(item);
 }
 
 appendToggle();
