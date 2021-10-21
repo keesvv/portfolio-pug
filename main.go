@@ -1,4 +1,4 @@
-//go:generate jade -pkg=views -writer -basedir views -d views index.pug
+//go:generate jade -pkg=views -writer -basedir views -d views index.pug contact.pug
 package main
 
 import (
@@ -21,6 +21,10 @@ func main() {
 
 	http.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
 		views.Index(rw)
+	})
+
+	http.HandleFunc("/contact", func(rw http.ResponseWriter, r *http.Request) {
+		views.Contact(rw)
 	})
 
 	log.Println("server started")
