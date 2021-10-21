@@ -11,7 +11,8 @@ server:
 	strip $(OUTDIR)/portfolio
 
 scss:
-	sass -s compressed views/index.scss:$(OUTDIR)/css/index.css
+	sass -s compressed views:$(OUTDIR)/css
+	rm -r $(OUTDIR)/css/includes
 
 scripts:
 	esbuild --minify --outdir=dist/js --sourcemap scripts/darkMode.ts

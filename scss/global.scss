@@ -1,4 +1,7 @@
 @import "./theme.scss";
+@import "../views/includes/navbar.scss";
+@import "../views/includes/header.scss";
+@import "../views/includes/footer.scss";
 
 body {
 	background: var(--bg-color);
