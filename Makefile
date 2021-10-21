@@ -11,13 +11,13 @@ server:
 	strip $(OUTDIR)/portfolio
 
 scss:
-	sass -s compressed scss/index.scss:$(OUTDIR)/css/index.css
+	sass -s compressed views/index.scss:$(OUTDIR)/css/index.css
 
 scripts:
-	tsc
+	esbuild --minify --outdir=dist/js --sourcemap scripts/darkMode.ts
 
 assets:
 	cp -r assets dist
 
 clean:
-	rm -r dist
+	rm -r dist views/*.go
