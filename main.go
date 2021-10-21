@@ -17,6 +17,7 @@ func main() {
 	// Static content
 	serveStatic("./css", "/static/css")
 	serveStatic("./js", "/static/js")
+	serveStatic("./assets", "/static/assets")
 
 	http.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
 		views.Index(rw)
